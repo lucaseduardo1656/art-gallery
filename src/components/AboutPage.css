@@ -1,0 +1,240 @@
+/* AboutPage.css */
+
+html, body, #root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes nyanCatAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.image-ag{
+  width:"320px";
+  border-radius: 50%;
+  height:"320px";
+  padding: 20px;
+}
+
+.nyan-cat {
+  width: 750vw; /* Ajuste o tamanho conforme necessário */
+  height:  342px; /* Ajuste o tamanho conforme necessário */
+  background-image: url('https://raw.githubusercontent.com/gist/KartSriv/3ec0038fbd26cdac8573382dc1cc857e/raw/b62b85e17ba62459c4c2f37e3d6314407d576f9f/nyancat.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex: 1;
+  position: absolute;
+  top: 50%; /* Ajuste a posição vertical conforme necessário */
+  left: 0; /* Inicialmente, o Nyan Cat estará fora da tela */
+  animation: nyanCatAnimation ms linear; /* Define a mesma animação que no keyframes anterior */
+  opacity: 0;
+  z-index: 1;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-section {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#14C2CC;
+  background-image: 
+  radial-gradient(circle farthest-side at top right, transparent, #0D64FF), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #FF00A0);
+  animation:clr-change 10s infinite;
+}
+
+@keyframes clr-change {
+	0%, 100% {
+		filter:hue-rotate(0deg);
+	}
+	50% {
+		filter:hue-rotate(-45deg);
+	}
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  margin: 20px;
+}
+
+.bottom-section {
+  background-color: #1C1D21;
+  padding: 20px;
+  color: white;
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: row; /* As caixas estarão em uma linha */
+  justify-content: space-between; /* Espaço entre as caixas */
+  flex: 1; /* As caixas preencherão o espaço horizontal disponível */
+}
+
+.info-box {
+  position: relative;
+  display: inline-block;
+  background: #1C1D21;
+  border-radius: 5px;
+  box-shadow:  0 12px 13px rgba(0,0,0,0.16), 0 12px 13px rgba(0,0,0,0.16);
+  text-align: center;
+  padding: 20px 50px;
+  margin: 5px;
+  padding-top: 5px;
+  transition: all 0.5s;
+  flex: 1;
+}
+
+h2{
+  text-align: center;
+}
+
+@media screen and (max-width: 1400px) { 
+  html, #body{
+    grid-template-rows: auto;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    position: relative;
+    background-color: #FF00A0;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+  }
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    height: auto;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .about-page {
+    flex-flow: column;
+  }
+  #top-section,
+  #bottom-section {
+    height: fit-content;
+  }
+  
+  .bottom-section {
+    background-color: #242424;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row; /* Alterado para exibição em coluna */
+    min-height: 100vh; /* Ajuste a altura mínima para ocupar toda a tela */
+  }
+  
+  /* Estilize os containers dentro da .bottom-section */
+  .info-box {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    margin-bottom: 10px; /* Adicione margem entre os containers */
+  }
+    .top-section {
+    flex: 1;
+    min-height: 100vh; /* Ajuste a altura mínima para ocupar toda a tela */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html, #root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+
+  .image-ag{
+    padding: 25px;
+    width: 124px;
+    height: 124px;
+  }
+
+  .nyan-cat {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+  }
+
+  .about-page {
+    flex-direction: column; /* Stack sections vertically on mobile */
+  }
+
+  .top-section {
+    flex: 1;
+    min-height: 100vh; /* Adjust the height to occupy the entire screen */
+    background-image: none; /* Remove background image on mobile */
+    background-color: #14C2CC; /* Set a background color */
+  }
+
+  .top-section h1 {
+    font-size: 2em; /* Adjust text size for mobile */
+  }
+
+  .bottom-section {
+    background-color: #242424;
+    padding: 20px;
+    color: white;
+  }
+
+  .image-container {
+    flex-direction: row; /* Stack elements vertically on mobile */
+  }
+
+  .info-box {
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #333;
+    flex: 1;
+    margin-right: 10px;
+
+    /* Add these properties to handle text overflow */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto; /* Optional for better word breaking */
+  }
+
+  .project-info {
+    flex-direction: column;
+  }
+}
+
+
+

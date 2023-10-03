@@ -1,0 +1,75 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Titulo{
+  -webkit-user-select:none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.textroda{
+  -webkit-user-select:none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  color: #ffffff;
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  animation: gradientShadow 1s linear infinite alternate;
+}
+
+@keyframes gradientShadow {
+  0% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+.conteiner{
+  min-height: 100vh;
+}
+
+.card {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.cardtext{
+  padding:0px;
+  bottom: 0;
+  transform: translateY(900%);
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+@media (prefers-color-scheme: light) {
+  .Titulo{
+    color: #242424;
+
+  }
+  .textroda{
+    color: #242424;
+  }
+
+  .logo {
+    color: #242424;
+  }
+}

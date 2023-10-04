@@ -1,5 +1,6 @@
 import React from "react";
 import "./ArtContainer.css";
+
 type ArtData = {
   id: number;
   title: string;

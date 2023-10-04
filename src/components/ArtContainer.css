@@ -61,7 +61,7 @@
     height: 100%;
     background: rgba(255, 255, 255, 0.089);
     backdrop-filter: blur(20px);
-    border: 1px solid #ececec;
+    border: 1px solid #1a1a1a;
     color: #e4e4e4;
     display: flex;
     justify-content: center;
@@ -197,12 +197,12 @@
         background: rgba(255, 255, 255, 0.089);
         backdrop-filter: blur(20px);
         border: 1px solid rgb(172, 172, 172);
-        color: rgb(172, 172, 172);
+        color: rgb(64, 64, 64);
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
       }
 
         .infoconteiner:hover .content{
-        color: rgb(131, 131, 131);
+        color: rgb(0, 0, 0);
         }
 
     }

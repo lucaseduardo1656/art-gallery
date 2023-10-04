@@ -1,4 +1,3 @@
-/* AboutPage.css */
 
 html, body, #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,35 +8,11 @@ html, body, #root {
   overflow: hidden;
 }
 
-@keyframes nyanCatAnimation {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 .image-ag{
   width:"320px";
   border-radius: 50%;
   height:"320px";
   padding: 20px;
-}
-
-.nyan-cat {
-  width: 750vw; /* Ajuste o tamanho conforme necessário */
-  height:  342px; /* Ajuste o tamanho conforme necessário */
-  background-image: url('https://raw.githubusercontent.com/gist/KartSriv/3ec0038fbd26cdac8573382dc1cc857e/raw/b62b85e17ba62459c4c2f37e3d6314407d576f9f/nyancat.gif');
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex: 1;
-  position: absolute;
-  top: 50%; /* Ajuste a posição vertical conforme necessário */
-  left: 0; /* Inicialmente, o Nyan Cat estará fora da tela */
-  animation: nyanCatAnimation ms linear; /* Define a mesma animação que no keyframes anterior */
-  opacity: 0;
-  z-index: 1;
 }
 
 .about-page {
@@ -183,13 +158,12 @@ h2{
 
   .image-ag{
     padding: 25px;
-    width: 124px;
-    height: 124px;
+    width: 200px;
+    height: 200px;
   }
 
-  .nyan-cat {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    height: 200px; /* Ajuste o tamanho conforme necessário */
+  .logo{
+    margin: 0%;
   }
 
   .about-page {

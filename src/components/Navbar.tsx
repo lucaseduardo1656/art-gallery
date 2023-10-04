@@ -11,8 +11,6 @@ const NavBar: React.FC = () => {
     }
   };
 
-  const [clickCount, setClickCount] = useState(0); // Estado para contar os cliques
-
   const redirectToMain = () => {
     window.location.href = "/";
   };

@@ -1,25 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./AboutPage.css";
 import GithubCard from "./gitcard";
 
 const AboutPage = () => {
-  const [clickCount, setClickCount] = useState(0);
-
-  const handleLogoClick = () => {
-    setClickCount(clickCount + 1);
-
-    if (clickCount >= 10) {
-      const nyanCat = document.getElementById("nyan-cat");
-      if (nyanCat) {
-        nyanCat.style.animation = "nyanCatAnimation 2.3s linear infinite";
-        nyanCat.style.opacity = "1";
-        alert("Nyan Cat apareceu!");
-      }
-    }
-  };
   return (
     <div className="about-page">
-      <div id="nyan-cat" className="nyan-cat"></div>
       <div className="top-section">
         <div className="image-container">
           <img
@@ -39,7 +24,6 @@ const AboutPage = () => {
             xmlns="http://www.w3.org/2000/svg"
             className="logo"
             id="logo"
-            onClick={handleLogoClick}
           >
             <defs></defs>
             <path d="M840 192h-56v-72c0-13.3-10.7-24-24-24H168c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h592c13.3 0 24-10.7 24-24V256h32v200H465c-22.1 0-40 17.9-40 40v136h-44c-4.4 0-8 3.6-8 8v228c0 0.6 0.1 1.3 0.2 1.9-0.1 2-0.2 4.1-0.2 6.1 0 46.4 37.6 84 84 84s84-37.6 84-84c0-2.1-0.1-4.1-0.2-6.1 0.1-0.6 0.2-1.2 0.2-1.9V640c0-4.4-3.6-8-8-8h-44V520h351c22.1 0 40-17.9 40-40V232c0-22.1-17.9-40-40-40zM720 352H208V160h512v192zM477 876c0 11-9 20-20 20s-20-9-20-20V696h40v180z"></path>
@@ -49,20 +33,23 @@ const AboutPage = () => {
       <div className="bottom-section">
         <div className="project-info">
           <div className="info-box">
-            <h2>Objetivo do Projeto</h2>
+            <h1>Objetivo do Projeto</h1>
             <p>
-              O objetivo do projeto é divulgar e valorizar conteúdos artísticos
-              vinculados com a cultura brasileira, dando preferência a artistas
-              nacionais. Além disso, em segundo plano, o projeto tem como
+              É valorizar conteúdos artísticos vinculados com a cultura
+              brasileira. Além disso, em segundo plano, o projeto tem como
               finalidade mostrar que a educação e a tecnologia podem andar de
-              mãos dadas, uma vez que é um trabalho desenvolvido por alunos do
-              Terceiro Ano Ensino Médio do Colégio Águia de Prata sob supervisão
-              do professor Filipe Lopes.
+              mãos dadas. Trabalho desenvolvido por alunos do Terceiro Ano
+              Ensino Médio do Colégio Águia de Prata sob supervisão do professor
+              Filipe Lopes.
             </p>
           </div>
           <div className="info-box">
-            <h2>Turma do 3º Ano do Ensino Médio</h2>
-            <p>O projeto foi feito pela turma do 3º ano do Ensino Médio.</p>
+            <h1>Turma do 3º Ano do Ensino Médio</h1>
+            <img
+              alt="FT"
+              src="3ft.jpg"
+              className=" overflow-hidden  object-cover w-full"
+            />
           </div>
           <GithubCard dataUser="lucaseduardo1656" dataTheme="dark" />
         </div>

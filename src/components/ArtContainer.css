@@ -44,12 +44,16 @@
     }
 
   .infoconteiner .content span{
-    position: fixed;
+    position: absolute;
     bottom: 1em;
     right: 1em;
     background-color: #0d64ff;
     border-radius: 50%;
     padding: 5px;
+  }
+
+  .infoconteiner .content span svg{
+  color: #ececec;
   }
 
   .infoconteiner .content{

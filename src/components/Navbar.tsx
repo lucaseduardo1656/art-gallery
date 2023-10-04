@@ -19,23 +19,18 @@ const NavBar: React.FC = () => {
     window.location.href = "/About/";
   };
 
-  // Verifica a guia atual
-  const currentPath = window.location.pathname;
-
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <button className="navbarbutton" onClick={redirectToMain}>
           <li className="navbarText">Home</li>
         </button>
-        {currentPath === "/" && (
-          <button
-            className="navbarbutton"
-            onClick={() => scrollToSelection("arts")}
-          >
-            <li className="navbarText">Galeria</li>
-          </button>
-        )}
+        <button
+          className="navbarbutton"
+          onClick={() => scrollToSelection("arts")}
+        >
+          <li className="navbarText">Galeria</li>
+        </button>
         <button className="navbarbutton" onClick={redirectToSobre}>
           <li className="navbarText">Sobre</li>
         </button>

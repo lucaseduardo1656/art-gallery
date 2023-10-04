@@ -58,6 +58,7 @@ function App() {
             artist={artwork.artist}
             description={artwork.description}
             imageUrl={artwork.imageUrl}
+            link={artwork.link}
           />
         ))}
       </div>

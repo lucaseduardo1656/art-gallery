@@ -29,6 +29,7 @@ export default function AdminClientsPage({
         artist={artwork.artist}
         description={artwork.description}
         imageUrl={artwork.imageUrl}
+        link={artwork.link}
       />
     </div>
   );

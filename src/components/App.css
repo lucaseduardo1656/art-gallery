@@ -8,6 +8,7 @@
   -webkit-user-select:none;
   -ms-user-select: none;
   user-select: none;
+  font-size: 3em;
 }
 .textroda{
   -webkit-user-select:none;
@@ -15,6 +16,8 @@
   user-select: none;
   color: white;
   text-align: center;
+  font-size: 1em;
+  padding-top: 5em;
 }
 
 .logo {

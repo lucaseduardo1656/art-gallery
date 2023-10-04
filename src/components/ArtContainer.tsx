@@ -1,5 +1,6 @@
 import React from "react";
 import "./ArtContainer.css";
+import { RiUserSearchLine } from "react-icons/ri";
 
 type ArtData = {
   id: number;
@@ -8,6 +9,7 @@ type ArtData = {
   artist: string;
   description: string;
   imageUrl: string;
+  link: string;
 };
 
 const ArtContainer = ({
@@ -17,7 +19,14 @@ const ArtContainer = ({
   ano,
   description,
   imageUrl,
+  link,
 }: ArtData) => {
+  // Função para redirecionar para a página da Google Arts & Culture com o nome do artista
+  const redirectToGoogleArts = () => {
+    const googleArtsUrl = `${link}`;
+    window.open(googleArtsUrl, "_blank");
+  };
+
   return (
     <div className="art-container">
       <div className="imageconteiner">
@@ -25,10 +34,13 @@ const ArtContainer = ({
       </div>
       <div className="infoconteiner">
         <div className="content">
-          <h1 className="">{title}</h1>
-          <p className="">Ano:{ano}</p>
-          <p className="">Artista: {artist}</p>
-          <p className="">{description}</p>
+          <h1>{title}</h1>
+          <p>Ano: {ano}</p>
+          <p>Artista: {artist}</p>
+          <p>{description}</p>
+          <span>
+            <RiUserSearchLine onClick={redirectToGoogleArts} />
+          </span>
         </div>
       </div>
     </div>

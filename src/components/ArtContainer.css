@@ -1,7 +1,7 @@
 .art-container {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Divide o espaço em 1/3 para o imagecontainer e 2/3 para art-info */
-    grid-gap: 20px; /* Espaçamento entre as colunas */
+    grid-template-columns: 1fr 2fr; 
+    grid-gap: 20px;
     width: 100%;
     height: 100vh;
     padding: 0;

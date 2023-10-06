@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import nFormatter from "./format.js";
+import nFormatter from "./format";
 
 const GithubCard: React.FC<{ dataUser: string; dataTheme?: string }> = ({
   dataUser,

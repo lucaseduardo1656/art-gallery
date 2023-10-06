@@ -20,6 +20,7 @@ O Art Gallery é uma aplicação web simples, criada para exibir uma coleção d
 - CSS
 - React
 - Next
+- Vercel
 
 ## Como Executar
 
@@ -31,7 +32,12 @@ Para executar o projeto localmente, siga estas etapas:
    git clone https://github.com/lucaseduardo1656/art-gallery.git
    ```
 
-2. Rode:
+2. instalar as dependencias:
+   ```shell
+   Npm install
+   ```
+3. Rode:
+
    ```shell
    Npm run dev
    ```
@@ -43,7 +49,6 @@ se você tiver sugestões para melhorar o projeto, fique à vontade. Suas contri
 ## Autor
 
 - [Led](https://github.com/lucaseduardo1656)
-
 
 Espero que você aprecie este projeto tanto quanto eu apreciei criá-lo. Sinta-se à vontade para explorar a galeria de arte .
 

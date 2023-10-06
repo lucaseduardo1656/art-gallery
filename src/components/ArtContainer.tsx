@@ -21,7 +21,6 @@ const ArtContainer = ({
   imageUrl,
   link,
 }: ArtData) => {
-  // Função para redirecionar para a página da Google Arts & Culture com o nome do artista
   const redirectToGoogleArts = () => {
     const googleArtsUrl = `${link}`;
     window.open(googleArtsUrl, "_blank");

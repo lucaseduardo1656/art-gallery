@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Art Gallery - Yaathe
 
-## Getting Started
+Bem-vindo ao repositório do projeto Art Gallery! Este é um projeto desenvolvido em apenas 3 dias como parte de um trabalho escolar, mas que me empolgou o suficiente para compartilhá-lo no meu perfil do GitHub. É o meu primeiro projeto web.
 
-First, run the development server:
+## Visão Geral
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O Art Gallery é uma aplicação web simples, criada para exibir uma coleção de obras de arte. A ideia por trás deste projeto é fornecer uma plataforma onde os visitantes do evento arte possam navegar por diversas obras, feitas por artistas brasileiros e locais apreciar e obter informações sobre cada uma delas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Galeria de Arte:** Uma exibição de várias obras de arte com imagens de alta qualidade.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Detalhes das Obras:** Os usuários podem obter informações sobre as artes, como o nome do artista, o título da obra, o ano de criação e uma descrição.
 
-## Learn More
+- **Responsividade:** A aplicação é responsiva, adaptando-se a diferentes dispositivos, como desktops, tablets e smartphones.
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Type Script
+- CSS
+- Teact
+- Next
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Como Executar
 
-## Deploy on Vercel
+Para executar o projeto localmente, siga estas etapas:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone este repositório:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```shell
+   git clone https://github.com/lucaseduardo1656/art-gallery.git
+   ```
+
+2. Rode:
+   ```shell
+   Npm run dev
+   ```
+
+## Contribuições
+
+se você tiver sugestões para melhorar o projeto, fique à vontade. Suas contribuições são bem-vindas!
+
+## Autor
+
+- [Led](https://github.com/lucaseduardo1656)
+
+
+Espero que você aprecie este projeto tanto quanto eu apreciei criá-lo. Sinta-se à vontade para explorar a galeria de arte .
+
+[Live Demo](https://v-art.vercel.app/)

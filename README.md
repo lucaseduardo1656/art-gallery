@@ -18,7 +18,7 @@ O Art Gallery é uma aplicação web simples, criada para exibir uma coleção d
 
 - Type Script
 - CSS
-- Teact
+- React
 - Next
 
 ## Como Executar
